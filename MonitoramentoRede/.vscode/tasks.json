@@ -1,0 +1,61 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/MonitoramentoRede.csproj",
+                "--configuration", 
+                "Debug",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compila o projeto MonitoramentoRede em modo Debug"
+        },
+        {
+            "label": "release-build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/MonitoramentoRede.csproj",
+                "--configuration",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile",
+            "detail": "Compila o projeto MonitoramentoRede em modo Release"
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "${workspaceFolder}/MonitoramentoRede.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/MonitoramentoRede.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            "isBackground": true,
+            "detail": "Executa o projeto com recarga automática"
+        }
+    ]
+}
