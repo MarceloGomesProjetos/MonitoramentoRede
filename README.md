@@ -25,7 +25,6 @@ MonitoramentoRede/
 ## Requisitos
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
-- [Node.js](https://nodejs.org/) (opcional, se precisar de ferramentas de front-end)
 
 ## Configuração
 
